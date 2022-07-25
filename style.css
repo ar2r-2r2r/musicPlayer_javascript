@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body{
+    background-color: rgb(238, 76, 76);
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Roboto Slab', serif;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color:white;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 60px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 68vh;
+    background-color: black;
+    color:white;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('1.png');
+}
+
+.bottom{
+    position:sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0px;
+    color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.icons{
+    margin-top: 13px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width:80vw;
+    cursor: pointer;
+    
+}
+
+.songItemContainer{
+    margin-top: 34px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: red;
+    width: 100%;
+    color:black;
+    margin:10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px 0;
+    border-radius: 10px;
+}
+
+.timestamp{
+    margin:0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Roboto Slab', serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    
+}
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: black;
+    }
+  }
